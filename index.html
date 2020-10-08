@@ -13,7 +13,7 @@
 
     <main>
         <div class="new-task">
-            <button class="new-task-button" aria-label="Create new task">
+            <button class="new-task-button" aria-label="Check all tasks">
                 <img src="images/angle-down-solid.svg" alt="Create new task" style="vertical-align: middle" width="17px" height="17px">
             </button>
             <input type="text" class="new-task-text" placeholder="What needs to be done&#63;" aria-label="Intput the text of new task">
@@ -62,14 +62,17 @@
         <label class="items-left">3 items left</label>
         <div role="navigation" aria-label="Task filters">
             <label>
-                <input type="radio" class="filter-radio-button" id="filter-all" checked aria-label="All tasks filter">All
+                <input type="radio" class="filter-radio-button" id="filter-all" checked name="radio-button-filters" aria-label="All tasks filter">All
             </label>
             <label>
-                <input type="radio" class="filter-radio-button" id="filter-active" aria-label="Active tasks filter">Active
+                <input type="radio" class="filter-radio-button" id="filter-active" name="radio-button-filters" aria-label="Active tasks filter">Active
             </label>
             <label>
-                <input type="radio" class="filter-radio-button" id="filter-completed" aria-label="Completed tasks filter">Completed
+                <input type="radio" class="filter-radio-button" id="filter-completed" name="radio-button-filters" aria-label="Completed tasks filter">Completed
             </label>
+            <div class="clear-completed">
+                <button class="clear-completed-button">Clear completed</button>
+            </div>
         </div>
     </footer>
 </body>
