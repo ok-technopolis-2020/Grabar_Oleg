@@ -1,58 +1,45 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>todo</title>
 </head>
+
 <body>
-    <header>
+   
+    <header class="header">
         <h1>todos</h1>
     </header>
+    
     <main>
         <div class="new-task">
-            <button class="check-all-task-button" aria-label="Check all tasks">
-                <img src="images/angle-down-solid.svg" alt="Create new task" style="vertical-align: middle" width="17px" height="17px">
-            </button>
+            <button class="select-all-task-button" aria-label="Check all tasks"></button>
             <input type="text" class="new-task-text" placeholder="What needs to be done&#63;" aria-label="Intput the text of new task">
         </div>
         <ul class="tasks" aria-label="Tasks">
             <li class="task">
-                <label>
-                    <input type="checkbox" class="task-checkbox" , id="task-checkbox-1" aria-label="Task checkbox">HTML
-                    <input type="checkbox" class="task-checkbox" id="task-checkbox-1" aria-label="Task checkbox">HTML
-                </label>
-                <button class="task-button-delete" aria-label="Delete task" hidden>
-                    <img src="images/cross.svg" alt="Delete task">
-                </button>
+                <input type="checkbox" class="task-checkbox" aria-label="Task checkbox">HTML
+                <button class="task-button-delete" aria-label="Delete task" hidden></button>
             </li>
             <li class="task">
-                <label>
-                    <input type="checkbox" checked class="task-checkbox" id="task-checkbox-2" aria-label="Task checkbox"><strike>CSS</strike>
-                </label>
-                <button class="task-button-delete" aria-label="Delete task" hidden>
-                    <img src="images/cross.svg" alt="Delete task">
-                </button>
+                <input type="checkbox" checked class="task-checkbox" aria-label="Task checkbox"><strike>CSS</strike>
+                <button class="task-button-delete" aria-label="Delete task" hidden></button>
+            </li>
+            <li class="task">    
+                <input type="checkbox" class="task-checkbox" aria-label="Task checkbox">JS
+                <button class="task-button-delete" aria-label="Delete task" hidden></button>
             </li>
             <li class="task">
-                <label>
-                    <input type="checkbox" class="task-checkbox" id="task-checkbox-3" aria-label="Task checkbox">JS
-                </label>
-                <button class="task-button-delete" aria-label="Delete task" hidden>
-                    <img src="images/cross.svg" alt="Delete task">
-                </button>
-            </li>
-            <li class="task">
-                <label>
-                    <input type="checkbox" class="task-checkbox" id="task-checkbox-4" aria-label="Task checkbox">JS tools
-                </label>
-                <button class="task-button-delete" aria-label="Delete task" hidden>
-                    <img src="images/cross.svg" alt="Delete task">
-                </button>
+                    <input type="checkbox" class="task-checkbox" aria-label="Task checkbox">JS tools
+                <button class="task-button-delete" aria-label="Delete task" hidden></button>
             </li>
         </ul>
     </main>
+
     <footer>
         <label class="items-left">3 items left</label>
-        <div role="navigation" aria-label="Task filters">
+
+        <div class="action-bar" role="navigation" aria-label="Task filters">
             <label>
                 <input type="radio" class="filter-radio-button" id="filter-all" checked name="filter-radio-button" aria-label="All tasks filter">All
             </label>
@@ -63,10 +50,12 @@
                 <input type="radio" class="filter-radio-button" id="filter-completed" name="filter-radio-button" aria-label="Completed tasks filter">Completed
             </label>
         </div>
+
         <div class="clear-completed">
-           <button class="clear-completed-button" aria-label="Delete completed tasks">Clear completed</button>
+            <button class="clear-completed-button" aria-label="Delete completed tasks">Clear completed</button>
         </div>
-        
+
     </footer>
 </body>
+
 </html>
